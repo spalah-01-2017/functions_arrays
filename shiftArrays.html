@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shiftArrays</title>
+</head>
+<body>
+
+    <p>
+        Реализуйте функцию shiftArrays, которая принимает сколько угодно массивов в качестве аргументов
+        и возвращает новый массив, состоящий из исходных массивов, сокращенных на один первый элемент.
+    </p>
+
+<script>
+
+    var result = shiftArrays([1, 4, 2], [5, 8, 23, 6], [99, 3]);
+    console.log(result);
+
+    function shiftArrays(){
+        var newArr = [];
+        for (var i = 0; i < arguments.length; i++){
+            arguments[i].shift();
+            for (var j = 0; j < arguments[i].length; j++){
+                newArr.push(arguments[i][j]);
+            }
+        }
+        return newArr;
+    }
+</script>
+
+</body>
+</html>

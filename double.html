@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>double</title>
+</head>
+<body>
+
+<p>
+    Реализуйте функцию double таким образом, чтобы пример ниже заработал.<br><br>
+
+    function doubleChar (str, fun) {<br>
+    &nbsp;&nbsp;&nbsp; var res = '';<br><br>
+
+    &nbsp;&nbsp;&nbsp; for (var i = 0; i < str.length: i += 1) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; res += fun(str[i]);<br>
+    &nbsp;&nbsp;&nbsp; };<br><br>
+
+    &nbsp;&nbsp;&nbsp; return res;<br>
+    }<br><br>
+
+    doubleChar("String", double) // "SSttrriinngg
+</p>
+
+<script>
+    function doubleChar (str, fun) {
+        var res = '';
+        for (var i = 0; i < str.length; i += 1) {
+            res += fun(str[i]);
+        }
+        return res;
+    }
+
+    function double(char){
+        return char + char;
+    }
+
+    //doubleChar("String", double); // "SSttrriinngg
+    console.log(doubleChar("String", double));
+</script>
+
+</body>
+</html>
