@@ -6,5 +6,27 @@
 </head>
 <body>
 
+<p>
+    Создайте функцию doubleElements, которая будет принимать в качестве аргумента массив и возвращать новый массив с
+    удвоенным количеством элементов.
+</p>
+
+<script>
+
+    console.log(doubleElements([1,2,3]));
+
+    function doubleElements(arr){
+        var newArr = [];
+        for (var i = 0; i < 2; i++){
+            for (var j = 0; j < arr.length; j++){
+                newArr.push(arr[j]);
+            }
+        }
+        return newArr;
+    }
+</script>
+
+
 </body>
 </html>
+
