@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lastArg</title>
+</head>
+<body>
+
+<p>
+    Реализовать функцию lastArg, которая возвращает последний аргумент из переданных. Если функция запущена
+    без аргументов, возвращать null.
+</p>
+
+<script>
+
+    lastArg(); //null
+    lastArg('a', 5, 99); //99
+
+    function lastArg(){
+        var result = null;
+        if (arguments.length){
+            result = arguments[arguments.length - 1];
+        }
+        return console.log(result);
+    }
+</script>
+
+</body>
+</html>

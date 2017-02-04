@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sumOnlyBigNums</title>
+</head>
+<body>
+
+<p>
+    Реализуйте функцию sumOnlyBigNums, которая будет принимать в качестве аргумента массив данных, а на выходе
+    возвращать сумму только тех чисел, которые больше 100.
+    sumOnlyBigNums([3, 140, '500', 100, '', 200]) //должна вернуть 340
+</p>
+
+<script>
+    console.log(sumOnlyBigNums([3, 140, '500', 100, '', 200]));
+
+    function sumOnlyBigNums(arr){
+        var result = null;
+        for (var i = 0; i < arr.length; i++){
+            if (typeof (arr[i]) == 'number' && arr[i] > 100) {
+                result += arr[i];
+            }
+        }
+        return result;
+    }
+</script>
+
+</body>
+</html>

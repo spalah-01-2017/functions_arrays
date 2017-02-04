@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>capitals</title>
+</head>
+<body>
+<p>
+    Создайте функцию capitals, принимающую в качестве аргумента строку и возвращающую массив с индексами,
+    указывающими на положение символов в верхнем регистре в этой строке. В случае, если в строке нет символов в верхнем
+    регистре, функция должна возвращать пустой массив.
+</p>
+
+<script>
+
+    var str = 'Hello World';
+    console.log(capitals(str)); // [0, 6]
+    var alphabet = 'abcdef...';
+    console.log(capitals(alphabet)); // []
+
+    function capitals(str){
+        var arr = [];
+        for (var i = 0; i < str.length; i++){
+            if (str[i] != str[i].toLowerCase()){
+                arr.push(i);
+            }
+        }
+        return arr;
+    }
+
+</script>
+
+</body>
+</html>
