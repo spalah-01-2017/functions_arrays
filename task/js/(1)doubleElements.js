@@ -1,8 +1,6 @@
 function doubleElements(arr) {
 	var arr2 = [];
-	for(i = 0; i < arr.length; i++) {
-		arr2.push(arr[i]);
-	}
+	arr2 = arr.slice();
 	for(i = 0; i < arr.length; i++) {
 		arr2.push(arr[i]);
 	}
