@@ -1,8 +1,10 @@
 function capitals(str) {
-    var result = [];
+	var result = [];
 	for (var i = 0; i < str.length; i += 1) {
-        // result[i] = !(str[i].toLowerCase) ? str.indexOf(!str[i].toLowerCase) : [];
-    };
+		if (str[i] !== str[i].toLowerCase()) {
+			result[i] = str.indexOf(str[i]);
+		}
+	}
 	return result; 
 }
 capitals('QWErty');
